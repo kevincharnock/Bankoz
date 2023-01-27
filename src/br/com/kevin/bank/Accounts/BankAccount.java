@@ -9,8 +9,9 @@ public class BankAccount {
     private byte digit;
     private Agency agency;
     private double currentValue;
-
     private Clients clients;
+
+    //todo: REALIZAR CRIAÇÃO DOS MÉTODOS "DEPOSITAR" E "SACAR"
 
     public int getAccountNumber() {
         return accountNumber;
