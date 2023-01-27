@@ -11,4 +11,44 @@ public class BankAccount {
     private double currentValue;
 
     private Clients clients;
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public byte getDigit() {
+        return digit;
+    }
+
+    public void setDigit(byte digit) {
+        this.digit = digit;
+    }
+
+    public Agency getAgency() {
+        return agency;
+    }
+
+    public void setAgency(Agency agency) {
+        this.agency = agency;
+    }
+
+    public double getCurrentValue() {
+        return currentValue;
+    }
+
+    public void setCurrentValue(double currentValue) {
+        this.currentValue = currentValue;
+    }
+
+    public Clients getClients() {
+        return clients;
+    }
+
+    public void setClients(Clients clients) {
+        this.clients = clients;
+    }
 }

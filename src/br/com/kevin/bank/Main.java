@@ -8,7 +8,7 @@ public class Main {
 
         Agency a1 = new Agency();
 
-        a1.setAgencyCode("01");
+        a1.setAgencyCode(1);
         a1.setAgencyName("centro");
 
         System.out.println(a1.createAgency());
