@@ -11,7 +11,34 @@ public class BankAccount {
     private double currentValue;
     private Clients clients;
 
-    //todo: REALIZAR CRIAÇÃO DOS MÉTODOS "DEPOSITAR" E "SACAR"
+
+    public double verifyValue(){
+        System.out.println("Seu saldo atual é: ");
+        return this.currentValue;
+    }
+    public boolean withdraw(double toWithdraw){
+        if (this.currentValue <= 0 ){
+            System.out.println("Não foi possível realizar o saque.");
+            return true;
+        }
+        else {
+            this.currentValue -= toWithdraw;
+            System.out.println("Você sacou: " + toWithdraw);
+            System.out.println("Saldo atualizado: " + this.currentValue);
+        }
+        return false;
+    }
+    public boolean deposit(double depositValue){
+     if (this.currentValue < this.currentValue + depositValue){
+         this.currentValue += depositValue;
+         System.out.println("Você depositou: " + depositValue);
+         System.out.println("Saldo atualizado: "+ this.currentValue);
+         return true;
+     }
+     else {
+         System.out.println("Não foi possível processar o seu depósito, tente novamente mais tarde.");
+     } return false;
+    }
 
     public int getAccountNumber() {
         return accountNumber;
